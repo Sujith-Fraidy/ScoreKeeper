@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreKeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://thumbs.dreamstime.com/b/football-soccer-playing-field-sport-game-stadium-spotlight-scoreboard-background-glitter-light-vector-illustration-110563745.jpg" alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header-title">
+                        <h3 class="title is-3">ScoreKeeper</h3>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <div class="container">
+                            <h1 class="score title is-1"><span id="player-1">0</span> - <span id="player-2">0</span></h1>
+                                <label for="winScore" class="label is-large is-inline">Winning Score</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="winScore">
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="btn-p1 is-primary button card-footer-item is-large">Player1 +1</button>
+                        <button class="btn-p2 is-info button card-footer-item is-large">Player2 +1</button>
+                        <button class="reset is-danger button card-footer-item is-large">Reset</button>
+                        <!-- <button style="border:1px solid black;" class="btn-p1 card-footer-item">Player-1</button>
+                        <button style="border:1px solid black;border-right: 0px;border-left: 0px;" class="btn-p2 card-footer-item">Player-2</button>
+                        <button style="border:1px solid black;" class="reset card-footer-item">Reset</button> -->
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
